@@ -43,10 +43,8 @@ public:
           // The following 4 parameters can be simply passed using macro MOTOR0~5
           mcpwm_unit_t unit, mcpwm_timer_t timer, mcpwm_io_signals_t iosig, mcpwm_operator_t op);
     ~MOTOR();
-    // Speed 0~100
+    // Speed -100~100
     void setspeed(float speed);
-    // direction: The direction of motor
-    void start(bool direction);
     // The motor will slowly stop because of inertia
     void stop();
     // The motor will immediately stop
