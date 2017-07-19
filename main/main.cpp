@@ -47,7 +47,6 @@ static void uart_task(void *pvParameters) {
             data[len] = 0;
             //printf("speed: %d\n", atoi((const char*)data));
             m -> setspeed((float)atoi((const char*)data));
-            m -> start(true);
         }
     }
 }
